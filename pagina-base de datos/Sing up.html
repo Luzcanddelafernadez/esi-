@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="Est.sing up.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="contenedor-título">
+            <h1>Registrarse</h1>
+            <img src="https://symbl-world.akamaized.net/i/webp/9f/2e3c7f037a6efc112aee25cfcde767.webp" alt="Logo de Google" class="logo-google-título">
+        </div>
+        <form action="/registrarse" method="POST">
+            <div class="grupo-formulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="grupo-formulario">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+            <div class="grupo-formulario">
+                <label for="correo">Correo Electrónico</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <div class="grupo-formulario">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" name="contraseña" required>
+            </div>
+            <div class="grupo-formulario">
+                <button type="submit">Registrarse</button>
+            </div>
+            <!-- Mensaje de error (opcional) -->
+            <div class="grupo-formulario">
+                <span class="error" id="mensaje-error"></span>
+            </div>
+        </form>
+    </div>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(evento) {
+            var nombre = document.getElementById('nombre').value;
+            var apellido = document.getElementById('apellido').value;
+            var correo = document.getElementById('correo').value;
+            var contraseña = document.getElementById('contraseña').value;
+            
+            if (nombre === '' || apellido === '' || correo === '' || contraseña === '') {
+                evento.preventDefault();
+                document.getElementById('mensaje-error').textContent = 'Por favor, complete todos los campos.';
+            }
+        });
+    </script>
+</body>
+</html>

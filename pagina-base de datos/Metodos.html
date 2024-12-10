@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles2.css">
+  <link rel="icon" type="image/png" href="img/logo3.png">
+  <title>Metodos antoconceptivos</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <ul class="nav-menu">
+        <img src="img/logo3.png" />
+        <h2>E.S.I</h2>
+        <div class="nav-display">
+          <li class="nav-item">
+            <a href="index.html" class="nav-item-link">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-item-link" id="non">categoria</a>
+            <ul class="nav-submenu">
+              <li class="nav-subitem">
+                <a href="Metodos.html">Metodos antoconceptivos</a>
+              </li>
+              <li class="nav-subitem">
+                <a href="ETS-ITS.html">Enfermedades por transmisión sexual</a>
+              </li>
+              <li class="nav-subitem">
+                <a href="identidad.html"> Identidad de genero </a>
+              </li>
+              <li class="nav-subitem">
+                <a href="Sexualidad.html"> Orientacion sexual </a>
+              </li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="Videos.html" class="nav-item-link">videos</a>
+          </li>
+          <li class="nav-item">
+            <a href="comunidad.html" class="nav-item-link">Comunidad</a>
+          </li>
+          <li class="nav-item">
+            <a href="Sing in.html" class="nav-item-link">Login</a>
+          </li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Modal -->
+    <div id="infoModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="cerrarModal()">&times;</span>
+        <h2 id="modal-title"></h2>
+        <div id="modal-content"></div>
+      </div>
+    </div>
+
+    <div class="contenedor_texto3">
+      <h1>Metodos anticonceptivos</h1>
+      <br>
+      <p>¿Qué son los métodos anticonceptivos? </p>
+      <P> por métodos anticonceptivos, contracepción o anticoncepción a las distintas maneras que existen de prevenir un
+        embarazo. Algunos de ellos incluso sirven para prevenir enfermedades venéreas o ETS.</p>
+    </div>
+
+    <div class="contenedor">
+
+      <div class="card-container">
+        <div class="card" style="width: 18rem;">
+          <img src="img/preservativo.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Preservativo</h5>
+            <p class="card-text">Método anticonceptivo de barrera (97% efectivo).</p>
+
+            <div class="contenido-adicional" style="display: none;">
+              <h6>Uso correcto del preservativo</h6>
+              <ol type="1">
+                <li>Revisa la fecha de vencimiento y el envoltorio.</li>
+                <li>No expongas al sol, calor ni fricción.</li>
+                <li>Usa desde el comienzo de la relación sexual.</li>
+                <li>No uses dos preservativos juntos.</li>
+                <li>Abre el sobre con cuidado, sin elementos cortantes ni dientes.</li>
+                <li>Una vez puestoa pretar la punta del preservativo para sacar el aire.</li>
+                <li>Coloca el preservativo en el pene erecto.</li>
+                <li>Desenrolla el preservativo hasta la base del pene.</li>
+                <li>No uses vaselina, aceite ni crema de manos.</li>
+                <li>Usa lubricantes "al agua" para sexo anal.</li>
+                <li>Retira el preservativo con el pene todavía erecto.</li>
+                <li>Tira el preservativo usado a la basura, no al inodoro.</li>
+              </ol>
+              <h6>Acceso gratuito</h6>
+              <p>Los preservativos son gratuitos según la ley nacional 25.67. Puedes obtener preservativos gratuitos en
+                centros de salud y hospitales.</p>
+            </div>
+
+            <button class="ver-mas" onclick="verMas(this)">Ver más</button>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="img/vasectomia.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Vasectomía</h5>
+            <p class="card-text">Es un método anticonceptivo irreversible que se realiza a través de una cirugía.</p>
+
+            <div class="contenido-adicional" style="display: none;">
+              <ul>
+                <li>Objetivo: Para quienes no desean tener hijos/as o ya tuvieron y no quieren tener más.</li>
+                <li>Efectos: No afecta erecciones, placer sexual ni aspecto del semen (pero no contiene
+                  espermatozoides).</li>
+                <li>Recomendaciones: Usar otro método anticonceptivo durante el período de eficacia y realizar controles
+                  médicos.</li>
+                <li>Comienza a ser efectiva después de 3 meses o 20 eyaculaciones.</li>
+                <li>No protege de las ETS o ITS</li>
+              </ul>
+              <h6>Requisitos legales</h6>
+              <ul>
+                <li>Edad: A partir de los 16 años, las personas pueden tomar decisiones autónomas sobre su cuerpo.</li>
+                <li>Consentimiento: Solo se requiere consentimiento por escrito después de recibir información completa.
+                </li>
+              </ul>
+            </div>
+            <button class="ver-mas" onclick="verMas(this)">Ver más</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="img/preservativo-femenino_jpg-700x346.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Preservativo Femenino</h5>
+            <p class="card-text">El condón femenino es un método anticonceptivo que sirve para evitar un embarazo no
+              deseado y también como forma de protección contra infecciones de transmisión sexual.</p>
+            <div class="contenido-adicional" style="display: none;">
+              <h6>¿Cómo Funciona?</h6>
+              <ul>
+                <li>Diseño: Tiene un doble aro y una vaina interna.</li>
+                <li>Cómo se coloca: El anillo interno (más grueso y cerrado) se coloca dentro de la vagina, mientras que
+                  el anillo externo (más fino y abierto) se coloca en la abertura de la vagina, cubriéndola.</li>
+                <li>Ventajas: No necesita espermicidas, tiene lubricación abundante y se puede usar con cualquier
+                  lubricante.</li>
+                <li>Material: Está hecho de poliuretano delgado y transparente, más resistente que el látex
+                  convencional.</li>
+                <li>Beneficios: Ofrece protección contra el embarazo y enfermedades de transmisión sexual.</li>
+                <li>Uso: Puede ser usado con cualquier tipo de lubricantes sin afectar su resistencia.</li>
+                <li>Se puede adquirir en farmacias, por internet o en sex shops.</li>
+              </ul>
+            </div>
+            <button class="ver-mas" onclick="verMas(this)">Ver más</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="img/pastilla_de_una_sola_hormona.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pastillas anticonceptivas</h5>
+            <p class="card-text">Los anticonceptivos hormonales orales o pastillas anticonceptivas, son un método seguro
+              y efectivo para evitar temporalmente el embarazo.</p>
+
+            <div class="contenido-adicional" style="display: none;">
+              <h6>¿Como funcionan?</h6>
+              <ul>
+                <li>Contenido: Contienen pequeñas cantidades de hormonas femeninas.</li>
+                <li>Uso: Se toman diariamente, comenzando el primer día de la menstruación.</li>
+                <li>Efectividad: Impiden la ovulación y espesan el moco del cuello uterino, evitando el paso de
+                  espermatozoides.</li>
+                <li>Eficacia: 98% de efectividad si se utilizan correctamente.</li>
+              </ul>
+
+              <h6>Ventajas</h6>
+              <ul>
+                <li>Regulariza las menstruaciones</li>
+                <li>Disminuye la cantidad y los días del sangrado menstrua</li>
+                <li>Disminuye o desaparece el acné y el grosor del vello</li>
+                <li>Disminuye el riesgo de padecer cáncer de ovario y del cuerpo de la matriz</li>
+              </ul>
+
+              <h6>Tipos de Pastillas Anticonceptivas</h6>
+              <ul>
+                <li>Pastillas Combinadas: Contienen estrógeno y progesterona, impiden la ovulación y vienen en cajas de
+                  21 o 28 pastillas.</li>
+                <li>Pastillas de Una Sola Hormona:</li>
+                <ul>
+                  <li>Minipíldora: Contiene progestágeno, modifica el moco del cuello uterino y se toma diariamente.
+                  </li>
+                  <li>Pastillas Anovulatorias de Progestágeno: Contienen desogestrel, cambian el moco del cuello del
+                    útero e impiden la ovulación.</li>
+                </ul>
+              </ul>
+
+              <h6>Cuidados y Precauciones</h6>
+              <ul>
+                <li>Olvido: Si se olvida tomar 2 o más pastillas, tomar una de inmediato y continuar con el resto.</li>
+                <li>Reacciones secundarias: Puede causar dolor de cabeza, náuseas, vómito, manchado entre períodos y
+                  aumento de sensibilidad a los rayos solares.</li>
+                <li>Uso prolongado: Se recomienda su uso hasta por 5 años.</li>
+                <li>Interacciones medicamentosas: Algunos medicamentos, como antibióticos y anticonvulsivantes, pueden
+                  afectar su eficacia.</li>
+                <li>Limitaciones: No previene enfermedades de transmisión sexual, como el VIH/SIDA. Se recomienda usar
+                  condón para protegerse contra estas enfermedades.</li>
+              </ul>
+
+              <h6>Información Adicional</h6>
+              <ul>
+                <li>No afectan la fertilidad ni el estado de ánimo.</li>
+                <li>La fertilidad es inmediata al suspender la toma de las pastillas.</li>
+                <li>Se recomiendan consultar con un profesional de la salud antes de iniciar su uso.</li>
+              </ul>
+
+              <p>La Ley Nacional 25.673 establece que las pastillas anticonceptivas son gratuitas y accesibles para
+                todas las personas.
+                Se pueden obtener en centros de salud, hospitales y farmacias.</p>
+            </div>
+            <!-- Botón para alternar el contenido -->
+            <button class="btn btn-primary" onclick="verMas(this)">Ver más</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="img/chip.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Chip anticonceptivo</h5>
+            <p class="card-text">Esta opción anticonceptiva a largo plazo, consiste en la implantación de una varilla
+              plástica flexible que se coloca por debajo de la piel a la altura de la axila.</p>
+
+            <!-- Contenido adicional (oculto inicialmente) -->
+            <div class="contenido-adicional" style="display: none;">
+              <h6>Características y Ventajas</h6>
+              <ul>
+                <li>Funcionamiento: Libera una dosis baja y regular de hormona progestacional que engrosa las mucosas
+                  del cuello del útero y afina el endometrio, inhibiendo la ovulación.</li>
+                <li>Implementación: Se puede implementar en menos de 10 minutos por un ginecólogo habituado al
+                  procedimiento.</li>
+                <li>Vida útil: 3 años, con una protección del 99% frente al embarazo.</li>
+                <li>Reversibilidad: Puede ser extraído, revirtiendo los efectos inmediatamente.</li>
+              </ul>
+
+              <h6>Desventajas del Chip Anticonceptivo</h6>
+              <ul>
+                <li>No protege contra enfermedades de transmisión sexual.</li>
+                <li>Alteración del patrón menstrual: Suprime la regla en la mayoría de los casos.</li>
+              </ul>
+            </div>
+
+            <!-- Botón para alternar el contenido -->
+            <button class="btn btn-primary" onclick="verMas(this)">Ver más</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="img/inyectable.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Anticonceptivo inyectable</h5>
+            <p class="card-text">Se colocan una vez al mes y otros cada tres meses. El efecto es el mismo que con las
+              pastillas</p>
+
+            <!-- Contenido adicional (oculto inicialmente) -->
+            <div class="contenido-adicional" style="display: none;">
+              <h6>Características y Ventajas</h6>
+              <ul>
+                <li>Contenido: Hormonas que evitan la ovulación.</li>
+                <li>Tipos: Inyectables mensuales y trimestrales.</li>
+                <li>Efectividad: Evitan la ovulación, igual que las pastillas anticonceptivas.</li>
+                <li>Ventaja: No requiere tomar pastillas diariamente.</li>
+              </ul>
+
+              <h6>Precauciones y Limitaciones</h6>
+              <ul>
+                <li>Recordar la fecha de colocación: Es fundamental para mantener la efectividad.</li>
+                <li>No protege contra enfermedades de transmisión sexual: Se recomienda la doble protección con
+                  preservativos.</li>
+              </ul>
+
+              <p>Acceso gratuito: Establecido por la Ley Nacional 25.673.</p>
+            </div>
+
+            <!-- Botón para alternar el contenido -->
+            <button class="btn btn-primary" onclick="verMas(this)">Ver más</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="img/emergencia.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Anticoncepción hormonal de emergencia</h5>
+            <p class="card-text">Es un método anticonceptivo que se utiliza después de una relación sexual sin
+              protección.</p>
+
+            <!-- Contenido adicional (oculto inicialmente) -->
+            <div class="contenido-adicional" style="display: none;">
+              <h6>Características y Uso</h6>
+              <ul>
+                <li>Propósito: Prevenir en caso de falla de otro método en caso de emergencia o en caso de violación
+                  sexual.</li>
+                <li>Efectividad: Es más efectiva cuanto antes se tome, especialmente dentro de las primeras 12 horas.
+                </li>
+                <li>Plazo de uso: Puede tomarse hasta cinco días después, pero disminuye la efectividad.</li>
+              </ul>
+
+              <h6>Acceso y Disponibilidad</h6>
+              <ul>
+                <li>Acceso gratuito: Está disponible en forma gratuita en hospitales y centros de salud, obras sociales
+                  y prepagas.</li>
+                <li>Venta en farmacias: También se puede adquirir en farmacias sin necesidad de receta.</li>
+              </ul>
+
+              <h6>Precauciones y Limitaciones</h6>
+              <ul>
+                <li>Uso esporádico: No es recomendable tomarla seguido, solo en caso de emergencia.</li>
+                <li>No protege contra enfermedades de transmisión sexual: Se recomienda el uso de preservativo y/o campo
+                  latex para protegerse contra el VIH/SIDA y otras infecciones de transmisión sexual.</li>
+              </ul>
+
+            </div>
+
+            <!-- Botón para alternar el contenido -->
+            <button class="btn btn-primary" onclick="verMas(this)">Ver más</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="img/diu7.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">DIU</h5>
+            <p class="card-text">Es un pequeño objeto de plástico recubierto de un hilo de cobre que se coloca dentro
+              del útero.</p>
+
+            <!-- Contenido adicional (oculto inicialmente) -->
+            <div class="contenido-adicional" style="display: none;">
+              <h6>Características y Ventajas</h6>
+              <ul>
+                <li>Funcionamiento: Provoca cambios en el interior del útero que impiden la fecundación del óvulo.</li>
+                <li>Tipos: Hay distintos modelos, incluyendo el DIU de cobre y el DIU-Lng.</li>
+                <li>Colocación: Lo coloca un profesional de la salud.</li>
+                <li>Duración: Es efectivo durante 5 o 10 años, según el modelo.</li>
+                <li>Reversibilidad: Puede ser retirado en cualquier momento.</li>
+              </ul>
+
+              <h6>Ventajas del DIU-Lng</h6>
+              <ul>
+                <li>Protección: Brinda protección de 3 a 5 años.</li>
+                <li>Mecanismo de acción: Altera el moco cervical y evita la proliferación del endometrio.</li>
+                <li>Indicaciones: Está especialmente indicado en personas con menstruaciones muy abundantes.</li>
+              </ul>
+
+              <h6>Precauciones y Limitaciones</h6>
+              <ul>
+                <li>No protege contra enfermedades de transmisión sexual: Se recomienda la doble protección con el uso
+                  de preservativo.</li>
+                <li>Cambios en el sangrado: Pueden observarse cambios en el sangrado, pero no son perjudiciales.</li>
+              </ul>
+
+              <h6>Acceso y Disponibilidad</h6>
+              <p>Acceso gratuito: Establecido por la Ley Nacional 25.673. Puedes obtenerlo en centros de salud, hospitales, obras sociales y prepagas.</p>
+
+            </div>
+
+            <!-- Botón para alternar el contenido -->
+            <button class="btn btn-primary" onclick="verMas(this)">Ver más</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="img/ligadura.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ligadura tubariana</h5>
+            <p class="card-text">Método anticonceptivo irreversible que se realiza a través de una cirugía en las trompas uterinas.</p>
+
+              <div class="contenido-adicional" style="display: none;">
+                <h6>Características</h6>
+                <ul>
+                  <li>Propósito: Para quienes deciden no quedar embarazadas o ya tuvieron hijos/as y no quieren tener más.</li>
+                  <li>Realización: La realizan profesionales médicos/as.</li>
+                  <li>Efectos: Después de la ligadura, se sigue ovulando y menstruando como siempre, y el placer sexual no cambia.</li>
+                </ul>
+  
+                <h6>Requisitos</h6>
+                <ul>
+                  <li>Edad: A partir de la mayoría de edad (18 años) o desde los 16 años con autonomía para tomar decisiones sobre el cuidado del cuerpo (Código Civil).</li>
+                  <li>Información y consentimiento: Dejar constancia por escrito de la decisión después de recibir información completa y comprensible.</li>
+                  <li>No requiere consentimiento de la pareja ni de nadie más.</li>
+                </ul>
+  
+                <h6>Precauciones y Limitaciones</h6>
+                <ul>
+                  <li>No protege contra enfermedades de transmisión sexual: Se recomienda la doble protección con el uso de preservativo.</li>
+                  <li>Es un método irreversible: No se puede revertir la ligadura tubaria.</li>
+                </ul>
+  
+              </div>
+
+            <!-- Botón para alternar el contenido -->
+            <button class="btn btn-primary" onclick="verMas(this)">Ver más</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="vermas.js"></script>
+
+    <footer>
+      <div class="footerContainer">
+        <div class="redes">
+          <a href=""><img src="img/whatsapp.png" alt=""></a>
+          <a href=""><img src="img/instagram.png" alt=""></a>
+          <a href=""><img src="img/social-media.png" alt=""></a>
+        </div>
+        <p>Copyright &copy;2024; Diseñado por: Candy</p>
+      </div>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</html>

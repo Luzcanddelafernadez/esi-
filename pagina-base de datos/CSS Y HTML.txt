@@ -1,0 +1,133 @@
+CSS ORIENTACION SEXUAL:  
+.orientacion-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin: 20px;
+}
+
+.orientacion-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  width: 30%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.orientacion-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.orientacion-item h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.orientacion-item p {
+  color: #fff;
+  text-align: justify;
+  margin: 10px 0;
+}
+
+.orientacion-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px 0;
+  transition: transform 0.5s ease;
+}
+
+.orientacion-item img:hover {
+  transform: scale(1.1);
+}
+
+.identidad h1, .identidad h3 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.identidad p {
+  color: #fff;
+  font-size: 1.1rem;
+  text-align: justify;
+  margin: 0 20px 20px;
+}
+
+
+
+
+
+
+HTML: <div class="identidad">
+  <h1>Sexualidades y Orientaciones</h1>
+  <h3>“¿Qué diferencias existen entre las diversas orientaciones sexuales?”</h3>
+  <p>
+    Existen diversas orientaciones sexuales, y cada una refleja la atracción emocional, romántica o sexual que una persona siente hacia otras. Es importante entender que la orientación sexual es independiente de la identidad de género, lo que significa que una persona puede identificarse con cualquier género y experimentar una atracción por personas de cualquier otro género o de su mismo género.
+  </p>
+</div>
+
+<!-- Orientaciones sexuales -->
+<div class="orientacion-container">
+  <div class="orientacion-item">
+    <h2>Lesbiana</h2>
+    <img src="img/lesbiana bandera.png" alt="Bandera Lesbiana">
+    <p>Una persona lesbiana es aquella que se siente atraída emocional, romántica o sexualmente por personas de su mismo género. Generalmente, este término se refiere a mujeres que se sienten atraídas por otras mujeres.</p>
+    <p>La homosexualidad femenina ha sido históricamente menos visibilizada que la masculina, pero hoy en día las personas lesbianas siguen luchando por ser reconocidas y por tener sus derechos respetados en todo el mundo.</p>
+    <img src="img/linda-pareja-lesbianas-bandera-lgbt_23-2148887041.jpg" alt="Pareja lesbiana">
+  </div>
+
+  <div class="orientacion-item">
+    <h2>Gay</h2>
+    <img src="img/gay.png" alt="Icono Gay">
+    <p>Una persona gay es aquella que siente atracción emocional, romántica o sexual por personas de su mismo género. Aunque el término "gay" se utiliza principalmente para referirse a hombres que se sienten atraídos por otros hombres, también se puede usar de manera general para todas las personas homosexuales, independientemente de su género.</p>
+    <p>La comunidad gay ha sido clave en la visibilidad y aceptación de las personas homosexuales en la sociedad. Su lucha por la igualdad de derechos sigue siendo fundamental en muchos países.</p>
+  </div>
+
+  <div class="orientacion-item">
+    <h2>Bisexual</h2>
+    <img src="img/bisexual.png" alt="Icono Bisexual">
+    <p>Una persona bisexual es aquella que siente atracción emocional, romántica o sexual tanto por personas de su mismo género como por personas de otro género. La bisexualidad no implica que una persona esté igualmente atraída por ambos géneros, sino que puede experimentar atracción por cualquiera de ellos.</p>
+    <p>La bisexualidad a veces ha sido malinterpretada o invisibilizada, pero quienes se identifican como bisexuales tienen una identidad legítima que debe ser respetada.</p>
+  </div>
+
+  <div class="orientacion-item">
+    <h2>Pansexual</h2>
+    <img src="img/pansexual.png" alt="Icono Pansexual">
+    <p>Las personas pansexuales sienten atracción emocional, romántica o sexual por personas sin importar su género. La atracción pansexual no se basa en el género de la persona, sino en su conexión emocional y afectiva con ella.</p>
+    <p>La pansexualidad es una forma de entender la sexualidad más allá de las categorías tradicionales de género y está en línea con la idea de que el género no debe definir ni limitar la atracción o los sentimientos de una persona.</p>
+  </div>
+
+  <div class="orientacion-item">
+    <h2>Asexual</h2>
+    <img src="img/asexual.png" alt="Icono Asexual">
+    <p>Una persona asexual es aquella que no experimenta atracción sexual por otras personas. Es importante señalar que ser asexual no significa que no se pueda experimentar atracción romántica o emocional, solo que no hay un deseo de tener relaciones sexuales.</p>
+    <p>La asexualidad es una orientación válida y cada vez más visibilizada. Las personas asexuales tienen el derecho a ser respetadas y entendidas en sus experiencias.</p>
+  </div>
+
+  <div class="orientacion-item">
+    <h2>Queer</h2>
+    <img src="img/queer.png" alt="Icono Queer">
+    <p>El término "queer" es un término paraguas que abarca una variedad de orientaciones sexuales e identidades de género que no se ajustan a las categorías tradicionales. Las personas queer pueden identificarse como no binarias, fluidas, o con cualquier otra identidad que no esté limitada por las normas heterosexuales y cisgénero tradicionales.</p>
+    <p>Ser queer es una forma de desafiar las normas convencionales y buscar una forma de vivir que se alinee con la autenticidad personal, sin restricciones sociales.</p>
+  </div>
+
+  <div class="orientacion-item">
+    <h2>Heterosexual</h2>
+    <img src="img/hetero.png" alt="Icono Heterosexual">
+    <p>Una persona heterosexual es aquella que siente atracción romántica o sexual por personas del género opuesto. Es la orientación sexual más común en muchas sociedades, pero eso no significa que sea la única válida ni la más importante.</p>
+    <p>Aunque el término "heterosexual" a veces se da por sentado, es importante reconocer y respetar todas las orientaciones sexuales, incluyendo la heterosexualidad, como igualmente válidas.</p>
+  </div>
+</div>
+
+<!-- CONCLUSIÓN -->
+<div class="identidad">
+  <h1>CONCLUSIÓN</h1>
+  <p>
+    Las orientaciones sexuales son diversas y varían según la persona. Cada individuo tiene derecho a definirse y vivir su orientación sexual de la manera que mejor le resuene, y es fundamental que cada una de estas orientaciones sea respetada y comprendida en su totalidad. La visibilidad y el respeto por todas las orientaciones sexuales son cruciales para construir una sociedad más inclusiva y respetuosa.
+  </p>
+</div>

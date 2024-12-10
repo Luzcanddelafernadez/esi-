@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .nav-item {
+            margin-right: 20px;
+        }
+
+        .nav-item-link {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .nav-item-link:hover {
+            background-color: #555;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contenedor {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .contenido-adicional {
+            display: none;
+            /* Inicialmente oculto */
+            padding-top: 10px;
+            background-color: #f4f4f4;
+            margin-top: 10px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .ver-mas {
+            background-color: #772a7e;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .ver-mas:hover {
+            background-color: #c15ac4;
+        }
+
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .redes a {
+            margin: 0 10px;
+        }
+
+        .redes img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+    <title>Metodos anticonceptivos</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-menu">
+                <img src="img/logo3.png">
+                <h2>E.S.I</h2>
+                <div class="nav-display">
+                    <li class="nav-item"><a href="E.S.I Inicio.html" class="nav-item-link">Inicio</a></li>
+                    <li class="nav-item"><a href="Metodos.html" class="nav-item-link">Metodos anticonceptivos</a></li>
+                    <li class="nav-item"><a href="Videos.html" class="nav-item-link">Videos</a></li>
+                    <li class="nav-item"><a href="Comunudad.html" class="nav-item-link">Comunidad</a></li>
+                    <li class="nav-item"><a href="Sing in.html" class="nav-item-link">Login</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Metodos anticonceptivos</h1>
+        <p>¿Qué son los métodos anticonceptivos? </p>
+        <p>Por métodos anticonceptivos, contracepción o anticoncepción a las distintas maneras que existen de prevenir
+            un embarazo.</p>
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/preservativo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Persevativo</h5>
+                    <p class="card-text">El preservativo es el método anticonceptivo de barrera más frecuente, con una eficacia del 97%.</p>
+                    <p class="contenido-adicional" style="display: none;">
+                        Aquí va el resto de la información sobre el preservativo.
+                    </p>
+                    <button class="ver-mas" onclick="toggleContent(this)">Ver más</button>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <img src="img/vasectomia.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Vasectomia</h5>
+                    <p class="card-text">¿Qué es? Es un método anticonceptivo irreversible que se realiza a través de una cirugía sencilla...</p>
+                    <p class="contenido-adicional" style="display: none;">
+                        Aquí va más información sobre la vasectomía.
+                    </p>
+                    <button class="ver-mas" onclick="toggleContent(this)">Ver más</button>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <img src="img/preservativo-femenino_jpg-700x346.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Persevativo femenino</h5>
+                    <p class="card-text">El condón femenino es un método anticonceptivo que sirve para evitar un embarazo no deseado...</p>
+                    <p class="contenido-adicional" style="display: none;">
+                        Aquí va más información sobre el preservativo femenino.
+                    </p>
+                    <button class="ver-mas" onclick="toggleContent(this)">Ver más</button>
+                </div>
+            </div>
+            
+            <!-- Repite el mismo formato para las demás tarjetas -->
+            <!-- ... -->
+            
+            <script>
+                function toggleContent(button) {
+                    // Obtener el contenido adicional y el texto del botón
+                    const contenidoAdicional = button.previousElementSibling; // El <p> contenido-adicional
+                    const botonVerMas = button;
+            
+                    // Cambiar el estado del contenido (mostrar u ocultar)
+                    if (contenidoAdicional.style.display === 'none') {
+                        contenidoAdicional.style.display = 'block';
+                        botonVerMas.textContent = 'Ver menos';  // Cambiar texto del botón
+                    } else {
+                        contenidoAdicional.style.display = 'none';
+                        botonVerMas.textContent = 'Ver más';  // Volver a cambiar el texto del botón
+                    }
+                }
+            </script>
+            
+</body>
+
+</html>
